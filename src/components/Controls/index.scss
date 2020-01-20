@@ -1,0 +1,74 @@
+.controls-container {
+    display: flex;
+}
+
+.colors {
+    width: 122px;
+    height: 62px;
+    border: 1px solid black;
+    border-radius: 3px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+
+    &__option {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        &:hover {
+            border: 1px solid white;
+        }
+        &--red {
+            background-color: red;
+        }
+        &--blue {
+            background-color: blue;
+        }
+        &--yellow {
+            background-color: yellow;
+        }
+        &--black {
+            background-color: black;
+        }
+        &--green {
+            background-color: green;
+        }
+        &--orange {
+            background-color: orange;
+        }
+        &--white {
+            background-color: white;
+        }
+        &--magenta {
+            background-color: magenta;
+        }
+    }
+}
+
+.utils {
+    width: 62px;
+    height: 62px;
+    border-radius: 3px;
+    border: 1px solid black;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    &__button {
+        cursor: pointer;
+        width: 30px;
+        height: 30px;
+        border: 1px solid black;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        &:hover {
+            background-color: rgba(101, 244, 58, 0.502);
+        }
+    }
+}
+
+.size {
+    border-radius: 50%;
+    background-color: black;
+} 
