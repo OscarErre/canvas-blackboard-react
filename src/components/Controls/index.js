@@ -1,16 +1,22 @@
 import React from 'react'
 import './index.scss'
 
-const Controls = ({lineWidth, onChangeColor, onChangeLineWidth}) => {
+const Controls = ({lineWidth, onChangeColor, onChangeLineWidth, onClear, onChangeDrawingMode}) => {
     return <div className="controls-container">
         <div className="utils">
-            <img className="utils__button" src='img/draw.png' alt="draw" onClick={()=> {onChangeColor('white')}}></img>
-            <img className="utils__button" src='img/erase.png' alt="erase" onClick={()=> {onChangeColor('#1f1e1e')}}></img>
+            <img className="utils__button" src='img/draw.png' alt="draw" onClick={()=> {onChangeDrawingMode('line')}}></img>
+            <img className="utils__button" src='img/erase.png' alt="erase" onClick={()=> {onChangeDrawingMode('erase')}}></img>
             <div className="utils__button" onClick={()=>{onChangeLineWidth(lineWidth)}}>
                 <div className="size" style={{width:lineWidth+"px", height:lineWidth+"px"}}></div>
             </div>
-            <div className="utils__button">
+            <div className="utils__button" onClick={()=>{onClear()}}>
                 🗑
+            </div>
+            <div className="utils__button" onClick={()=>{onChangeDrawingMode('rect')}}>
+                <div className="square"></div>
+            </div>
+            <div className="utils__button" onClick={()=>{onChangeDrawingMode('circle')}}>
+                <div className="circle"></div>
             </div>
         </div>
         <div className="colors">

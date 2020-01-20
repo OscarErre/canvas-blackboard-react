@@ -47,7 +47,7 @@
 }
 
 .utils {
-    width: 62px;
+    width: 92px;
     height: 62px;
     border-radius: 3px;
     border: 1px solid black;
@@ -71,4 +71,17 @@
 .size {
     border-radius: 50%;
     background-color: black;
-} 
+}
+
+.square {
+    border: 1px solid black;
+    width: 50%;
+    height: 50%;
+}
+
+.circle {
+    border: 1px solid black;
+    border-radius: 50%;
+    width: 50%;
+    height: 50%;
+}
