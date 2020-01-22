@@ -1,7 +1,8 @@
+@import '../../config.scss';
+
 .board {
-    margin-top: 20px;
-    background-color: #1f1e1e;
+    background-color: $board-background;
     border-radius: 1%;
-    border: solid 5px brown;
+    border: solid 5px $board-border;
     cursor: crosshair;
 }

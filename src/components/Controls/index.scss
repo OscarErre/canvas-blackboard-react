@@ -1,11 +1,11 @@
+@import '../../config.scss';
+
 .controls-container {
     display: flex;
 }
 
 .colors {
-    width: 122px;
-    height: 62px;
-    border: 1px solid black;
+    border: 1px solid $border-color;
     border-radius: 3px;
     display: flex;
     flex-direction: column;
@@ -15,9 +15,9 @@
         cursor: pointer;
         width: 30px;
         height: 30px;
-        border: 1px solid black;
+        border: 1px solid $border-color;
         &:hover {
-            border: 1px solid white;
+            border: 1px solid grey;
         }
         &--red {
             background-color: red;
@@ -47,10 +47,8 @@
 }
 
 .utils {
-    width: 92px;
-    height: 62px;
     border-radius: 3px;
-    border: 1px solid black;
+    border: 1px solid $border-color;
     display: flex;
     flex-direction: column;
     flex-wrap: wrap;
@@ -58,7 +56,7 @@
         cursor: pointer;
         width: 30px;
         height: 30px;
-        border: 1px solid black;
+        border: 1px solid $border-color;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -70,17 +68,17 @@
 
 .size {
     border-radius: 50%;
-    background-color: black;
+    background-color: $border-color;
 }
 
 .square {
-    border: 1px solid black;
+    border: 1px solid $border-color;
     width: 50%;
     height: 50%;
 }
 
 .circle {
-    border: 1px solid black;
+    border: 1px solid $border-color;
     border-radius: 50%;
     width: 50%;
     height: 50%;
